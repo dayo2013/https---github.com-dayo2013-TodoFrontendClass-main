@@ -7,19 +7,19 @@ const Todos = () => {
   
   return (
     <ul>
-      {!!todos.length &&
+      {todos.length === 0 ? "NO AVAILBLE TODOS" : !!todos.length &&
         todos.map((todo) => <Todo key={todo.id} todo={todo} />)}
     </ul>
   );
 };
 
-const CompletedTodos = () => {
+export const CompletedTodos = () => {
   const { todos } = useContext(todosContext);
   const completedTodos = todos.filter(todo => todo.completed);
   
   return (
     <ul>
-      {!!todos.length &&
+      {completedTodos.length === 0 ? "NO COMPLETED TODOS" : !!completedTodos.length &&
         completedTodos.map((todo) => <Todo key={todo.id} todo={todo} />)}
     </ul>
   );

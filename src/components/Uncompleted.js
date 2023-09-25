@@ -12,8 +12,8 @@ const UncompletedTodos = () => {
     
     return (
       <ul>
-        {!!todos.length &&
-          uncompletedTodos.map((todo) => <Todo key={todo.id} todo={todo} />)}
+        {uncompletedTodos.length === 0 ? "NO UNCOMPLETED TODOS" : (!!uncompletedTodos.length &&
+          uncompletedTodos.map((todo) => <Todo key={todo.id} todo={todo} />))}
       </ul>
     );
   };
