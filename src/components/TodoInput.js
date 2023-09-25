@@ -4,7 +4,7 @@ import { todosContext } from "../App";
 const TodoInput = () => {
   const { todoRef, handleCreate } = useContext(todosContext);
   return (
-    <form onSubmit={handleCreate}>
+    <form onSubmit={handleCreate} className="flex">
       <input
         type="text"
         className="todo-input"

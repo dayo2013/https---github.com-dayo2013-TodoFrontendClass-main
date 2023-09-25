@@ -1,5 +1,5 @@
 * {
-  background-color: #999;
+  background-color:#F0FFFF;
 }
 
 .todo-create {
@@ -12,14 +12,14 @@
 }
 
 .todo-input {
-  background-color: white;
+  background-color:#F5F5DC;
   border: none;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
 .todo-submit {
-  background-color: red;
+  background-color: rgb(83, 43, 43);
   color: white;
   border: none;
   padding: 0.5rem 0.5rem;
@@ -41,5 +41,5 @@
 
 .checked {
   text-decoration: line-through;
-  color: red;
+  color: rgb(68, 42, 42);
 }
